@@ -1,8 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import AIMessage
 from typing import Dict
-from models.llm import llm
-from core.state import SupervisorState
+from app.models.llm import llm
+from app.core.state import SupervisorState
 
 def create_supervisor_chain():
     """Creates the supervisor decision chain"""

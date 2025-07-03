@@ -1,8 +1,8 @@
 from langchain_core.messages import AIMessage, HumanMessage
-from models.llm import llm
+from app.models.llm import llm
 from typing import Dict
 from datetime import datetime
-from core.state import SupervisorState
+from app.core.state import SupervisorState
 
 def writer_agent(state: SupervisorState) -> Dict:
     """Writer uses Groq to create final report"""
