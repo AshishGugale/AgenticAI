@@ -1,10 +1,10 @@
 from langgraph.graph import StateGraph, END
-from .state import SupervisorState
-from .router import router
-from supervisor.decision import supervisor_agent
-from agents.researcher import researcher_agent
-from agents.analyst import analyst_agent
-from agents.writer import writer_agent
+from app.core.state import SupervisorState
+from app.core.router import router
+from app.supervisor.decision import supervisor_agent
+from app.agents.researcher import researcher_agent
+from app.agents.analyst import analyst_agent
+from app.agents.writer import writer_agent
 
 workflow = StateGraph(SupervisorState)
 

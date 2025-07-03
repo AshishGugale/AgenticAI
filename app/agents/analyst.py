@@ -1,7 +1,7 @@
 from langchain_core.messages import AIMessage, HumanMessage
-from models.llm import llm
+from app.models.llm import llm
 from typing import Dict
-from core.state import SupervisorState
+from app.core.state import SupervisorState
 
 def analyst_agent(state: SupervisorState) -> Dict:
     """Analyst uses Groq to analyze the research"""
